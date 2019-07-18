@@ -1,11 +1,32 @@
 .cardContainer {
-    border-radius: 15px;
-    background-color: lightcyan;
     padding: 16px;
-    width: 100%;
+    width: fit-content;
+    width: 25%;
+    max-width: 400px;
+    min-width: 200px;
 }
 .d-flex {
     display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+    .flex-lg-row {
+        flex-direction: row;
+    }
+    .nt-lg-0 {
+        margin-top: 0;
+    }
+    .justify-content-lg-start {
+        justify-content: flex-start !important;
+    }
+    .cardContainer {
+        min-width: 250px !important;
+    }
+}
+.justify-content-center {
+    justify-content: center;
 }
 .mx-auto {
     margin-right: auto;
@@ -39,4 +60,5 @@ h4 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: center;
 }
