@@ -1,0 +1,42 @@
+.cardContainer {
+    border-radius: 15px;
+    background-color: lightcyan;
+    padding: 16px;
+    width: 100%;
+}
+.d-flex {
+    display: flex;
+}
+.mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+.ml-2 {
+    margin-left: 8px;
+}
+.row {
+    flex-direction: row;
+}
+.avatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+.align-items-center {
+    align-items: center;
+}
+.mt-2 {
+    margin-top: 8px;
+}
+.mt-3 {
+    margin-top: 16px;
+}
+h4,
+span {
+    margin: 0;
+}
+h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
