@@ -15,6 +15,9 @@
         justify-content: flex-start !important;
     }
 }
+.animated-box-shadow {
+    transition: box-shadow 0.1s ease;
+}
 .justify-content-center {
     justify-content: center;
 }

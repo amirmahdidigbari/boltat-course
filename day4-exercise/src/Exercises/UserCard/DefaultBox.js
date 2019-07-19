@@ -1,6 +1,6 @@
 import React from "react";
 
-const DefaultBox = ({ children, style, containerStyle, onMouseEnter, onMouseLeave }) => {
+const DefaultBox = ({ children, style, containerStyle, onMouseEnter, onMouseLeave, id, onClick }) => {
     let [windowWidth, setWindowWidth] = React.useState(document.body.clientWidth);
 
     React.useEffect(() => {
@@ -11,6 +11,8 @@ const DefaultBox = ({ children, style, containerStyle, onMouseEnter, onMouseLeav
         <div
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
+            onClick={onClick}
+            id={id}
             style={{
                 padding: 16,
                 width: "fit-content",

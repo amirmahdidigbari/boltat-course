@@ -2,13 +2,15 @@ import React from "react";
 import "./UserSelfCard.css";
 import DefaultBox from "./DefaultBox";
 
-const UserSelfCard = ({ user, boxStyle, boxContainerStyle, onMouseEnter, onMouseLeave }) => {
+const UserSelfCard = ({ user, boxStyle, boxContainerStyle, onMouseEnter, onMouseLeave, onClick, id }) => {
     return (
         <DefaultBox
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
+            onClick={onClick}
             containerStyle={boxContainerStyle}
-            style={boxStyle}>
+            style={boxStyle}
+            id={id}>
             <div className='d-flex flex-column align-items-center flex-lg-row justify-content-center justify-content-lg-start'>
                 <img src={user.image} className='avatar' />
                 <div className='ml-2 mt-2 mt-lg-0' style={{ overflow: "hidden" }}>
